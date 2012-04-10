@@ -4,6 +4,7 @@ Deface::Override.new(:virtual_path => %q{spree/layouts/spree_application},
                           :replace => %q{[data-hook='body']},
                           :closing_selector => %q{},
                           :text => %q{<body id="<%= (@body_id == 'signup' ? 'checkout' : @body_id) || controller.controller_name %>">
+ 
  <%= javascript_include_tag "jquery","product" %>
 
     <div id="wrapper">
